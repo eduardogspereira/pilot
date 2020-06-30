@@ -58,7 +58,6 @@ const hasDashboardAccess = ifElse(
   path(['client', 'authentication', 'allow_dashboard_login']),
   allPass([
     pathNotEq(['company', 'type'], 'mei'),
-    pathNotEq(['company', 'type'], 'payment_link_app'),
   ])
 )
 
